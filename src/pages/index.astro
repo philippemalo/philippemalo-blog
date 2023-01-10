@@ -1,7 +1,10 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import LatestPosts from "../components/LatestPosts.astro";
 
-const pageTitle = "Philippe Malo's Blog";
+const pageTitle = "Philippe Malo's Blog (WIP)";
 ---
 
 <html lang="en">
@@ -13,10 +16,23 @@ const pageTitle = "Philippe Malo's Blog";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 
     <h1>{pageTitle}</h1>
+
+    <h2><u>The purpose of this blog...</u></h2>
+
+    <p>
+      I'm creating this blog to document every bit of information I deem
+      important/interesting while going through my coding journey. I hope to
+      build a valuable resource that I can come back to in the future.
+      <br />
+      <br />
+      Happy reading!
+    </p>
+
+    <LatestPosts />
+
+    <Footer />
   </body>
 </html>

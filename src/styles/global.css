@@ -1,13 +1,32 @@
 html {
-  background-color: #f1f5f9;
+  background-color: rgb(26, 26, 26);
   font-family: sans-serif;
 }
 
-a {
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+nav a {
+  text-decoration: none;
   color: white;
+  border: 1px solid white;
+  padding: 1ch 2ch;
+}
+
+nav a:hover {
+  box-shadow: -3px 3px 0 white;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
   color: white;
   background-color: rgb(26, 26, 26);
   margin: 0 auto;
@@ -15,6 +34,7 @@ body {
   max-width: 80ch;
   padding: 1rem;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 * {
@@ -24,4 +44,18 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }

@@ -1,0 +1,71 @@
+---
+interface mdPostTags {
+  title: string;
+  description: string;
+  pubDate: Date;
+  href: string;
+}
+
+// TO DO: get all files in posts folder, parse each of them and fill this array automatically
+let latestPosts: mdPostTags[] = [
+  {
+    title: "My First Blog Post",
+    description: "This is the first post of my new Astro blog.",
+    pubDate: new Date("2022-07-01"),
+    href: "/posts/post-1",
+  },
+  {
+    title: "My Second Blog Post",
+    description: "After learning some Astro, I couldn't stop!",
+    pubDate: new Date("2022-07-08"),
+    href: "/posts/post-2",
+  },
+  {
+    title: "My Third Blog Post",
+    description:
+      "I had some challenges, but asking in the community really helped!",
+    pubDate: new Date("2022-07-15"),
+    href: "/posts/post-3",
+  },
+];
+
+latestPosts = latestPosts.sort((a, b) => {
+  const dateDiff = b.pubDate.getTime() - a.pubDate.getTime();
+  return dateDiff;
+});
+---
+
+{
+  latestPosts.length ? (
+    <>
+      <h2>
+        <u>Latest post{latestPosts.length > 1 && "s"}</u>
+      </h2>
+      <ul>
+        {latestPosts.map((post) => {
+          return (
+            <a href={post.href}>
+              <li>
+                <h3>{post.title}</h3>
+                <p>{post.description}</p>
+                <p>
+                  <em>Published on </em>
+                  {post.pubDate.toDateString()}
+                </p>
+              </li>
+            </a>
+          );
+        })}
+      </ul>
+    </>
+  ) : (
+    <h3>No post published yet...</h3>
+  )
+}
+
+<style>
+  a {
+    color: white;
+    text-decoration: none;
+  }
+</style>
