@@ -5,7 +5,7 @@ pubDate: 2023-01-11
 description: "Steps to the creation of this personal blog. Why? How? Improvements?"
 author: "Philippe Malo"
 image:
-  url: "../../../public/astro-logo.png"
+  url: "/public/astro-logo.png"
   alt: "The Astro logo"
 tags: ["astro", "blogging", "learning in public"]
 draft: false
@@ -24,6 +24,7 @@ Welcome to my new blog! Here, I will go through the steps that I've taken to cre
 Astro websites are _**FAST**_. Don't believe me? Throttle your connection and reload this page.
 
 Astro offers a little sprinkle of every web framework. The possible integrations are endless.
+
 <br>
 You want to use React or Vue components? Go for it.
 <br>

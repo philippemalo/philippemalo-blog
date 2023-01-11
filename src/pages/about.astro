@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import portrait from "../../public/portrait.jpg";
 
 const pageTitle = "About Me";
 ---
@@ -17,7 +18,7 @@ const pageTitle = "About Me";
   <body>
     <Navigation />
 
-    <img src="../../public/portrait.jpg" alt="Philippe Malo's Portrait" />
+    <img src={portrait} alt="Philippe Malo's Portrait" />
     <h1>{pageTitle}</h1>
 
     <h4>
