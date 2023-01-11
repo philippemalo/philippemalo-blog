@@ -17,13 +17,79 @@ const pageTitle = "About Me";
   <body>
     <Navigation />
 
+    <img src="../../public/portrait.jpg" alt="Philippe Malo's Portrait" />
     <h1>{pageTitle}</h1>
 
-    <p>
+    <h4>
       Geomatics bachelor turned web developer. Problem solver at heart looking
       for new challenges and learning opportunities.
+    </h4>
+
+    <h4><u>Studies</u></h4>
+    <p>
+      I studied Geomatics and the University of Sherbrooke in Quebec. During my
+      time there I learned about all sorts of spatial data formats, acquisition
+      methods, how this data is stored and how to process this data so it can be
+      used to support important decisions.
+      <br />
+      <br />
+      I started coding in my second year of University. I developed python scripts
+      to automate data cleaning processes and data analysis using libraries like
+      arcpy, gdal and ogr (just to name a few).
+      <br />
+      <br />
+      Although that was a nice introduction to programming, I was hoping that it
+      would've been a bigger part of my bachelor's degree.
     </p>
+
+    <h4><u>Work</u></h4>
+    <p>
+      Shortly after I received my diploma, I got an amazing opportunity to learn
+      web development with a mentor and to be paid while doing so. Even if it
+      didn't have much to do with what I studied during the previous few years,
+      I really couldn't pass on that offer.
+      <br />
+      <br />
+      I worked as a Full Stack Web Developer (mainly using React and Nodejs) for
+      just over a year. During that time I worked on 3 projects...
+    </p>
+    <ul>
+      <li>
+        <p>
+          2rives.xyz - A Customer Relationship Management application for a
+          disaster recovery company.
+        </p>
+        <p>
+          While developing this app, I learned about the Model-View-Controller
+          software architecture. I worked with <u>React</u> for the frontend (jsx,
+          components, render cycle, state management), <u>Nodejs</u> to boot an Express
+          server where a <u>GraphQL API</u> was defined, <u>PostgreSQL</u> to store
+          data, and an ORM named <u>Prisma</u> to facilitate the interactions between
+          the server and the database.
+        </p>
+      </li>
+      <li>
+        <p>
+          groupecopley.com - A website for a leasing group of luxury residential
+          real estate.
+        </p>
+        <p>wip...</p>
+      </li>
+      <li>
+        <p>
+          animal-quebec.com - An animal registry application for municipalities
+        </p>
+        <p>wip...</p>
+      </li>
+    </ul>
 
     <Footer />
   </body>
 </html>
+
+<style>
+  img {
+    max-width: 15em;
+    margin: 0 auto;
+  }
+</style>

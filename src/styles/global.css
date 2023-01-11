@@ -3,12 +3,17 @@ html {
   font-family: sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   margin: 1rem 0;
+  padding-bottom: 2rem;
 }
 
 nav a {
@@ -37,8 +42,8 @@ body {
   min-height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
+ul {
+  list-style-type: square;
 }
 
 h1 {
@@ -52,6 +57,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   margin-top: auto;
+  padding-top: 2rem;
 }
 
 footer a {
