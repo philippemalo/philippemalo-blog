@@ -1,11 +1,11 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 title: "The creation of this blog"
-pubDate: 2023-01-11
+pubDate: 2023-01-12
 description: "Steps to the creation of this personal blog. Why? How? Improvements?"
 author: "Philippe Malo"
 image:
-  url: "/public/astro-logo.png"
+  url: "/astro-logo.png"
   alt: "The Astro logo"
 tags: ["astro", "blogging", "learning in public"]
 draft: false

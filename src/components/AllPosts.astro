@@ -24,7 +24,10 @@ posts = posts.sort((a, b) => {
               <p>{post.frontmatter.description}</p>
               <p>
                 <em>Published on </em>
-                {new Date(post.frontmatter.pubDate).toDateString()}
+                {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                  "en-US",
+                  { dateStyle: "full" }
+                )}
               </p>
             </li>
           </a>
