@@ -1,45 +1,24 @@
 html {
   background-color: rgb(26, 26, 26);
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 1rem 0;
-  padding-bottom: 2rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  border: 1px solid white;
-  padding: 1ch 2ch;
-}
-
-nav a:hover {
-  box-shadow: -3px 3px 0 white;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 80ch;
+  min-height: 100vh;
+
+  margin: 0 auto;
 
   color: white;
   background-color: rgb(26, 26, 26);
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
   line-height: 1.5;
-  min-height: 100vh;
 }
 
 ul {
@@ -51,17 +30,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: auto;
-  padding-top: 2rem;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+.container {
+  margin-top: 6rem;
+  padding: 1rem;
 }

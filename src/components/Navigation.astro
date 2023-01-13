@@ -1,5 +1,52 @@
-<nav>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
-</nav>
+---
+---
+
+<>
+  <nav id="navbar">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+
+  <script>
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        // if scrolling up
+        document.getElementById("navbar").style.top = "2rem";
+      } else {
+        // if scrolling down
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+</>
+
+<style>
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 80ch;
+    position: fixed;
+    top: 2rem;
+    transition: top 0.3s;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(26, 26, 26);
+    padding: 0.5rem 1rem;
+  }
+
+  a:hover {
+    box-shadow: -3px 3px 0 white;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+</style>

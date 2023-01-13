@@ -55,23 +55,26 @@ if (latestPosts.length > 3) {
 
 <style>
   a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     color: white;
     text-decoration: none;
   }
 
   ul {
-    list-style-type: none;
-  }
-  ul a {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0;
+    list-style-type: none;
   }
 
   img {
-    display: block;
-    max-width: 10em;
-    max-height: 10em;
+    max-width: 10rem;
+    max-height: 10rem;
     width: auto;
     height: auto;
   }

@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 title: "The creation of this blog"
-pubDate: 2023-01-12
+pubDate: 2023-01-11
 description: "Steps to the creation of this personal blog. Why? How? Improvements?"
 author: "Philippe Malo"
 image:
@@ -15,9 +15,9 @@ draft: false
 
 Published on: _Wednesday, January 11th 2023_
 
-Welcome to my new blog! Here, I will go through the steps that I've taken to create this website.
+Welcome to my new blog!
 
-**Why** have I chosen Astro? **How** did I do it? **What** is there to improve?
+Here, I will explain how I created this website and why I chose Astro to build it.
 
 ## Why Astro
 
