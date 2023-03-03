@@ -8,7 +8,7 @@ image:
   url: "/astro-logo.png"
   alt: "The Astro logo"
 tags: ["astro", "blogging", "learning in public"]
-draft: false
+draft: true
 ---
 
 # The creation of this blog
